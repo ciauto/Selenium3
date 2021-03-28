@@ -31,14 +31,14 @@ public class Demotest {
   @Test
   public void verifyinvalidLogin() {
 	  driver.findElement(By.xpath("html/body/div[1]/header/div/ul/li[1]/a")).click();
-	  driver.findElement(By.xpath("//input[@id='signInEmail']")).sendKeys("Naresh_rp");
+	  driver.findElement(By.xpath("//input[@id='signInEmail']")).sendKeys("Naresh_rp1");
 	  driver.findElement(By.xpath("//input[@id='signInPassword']")).sendKeys("Naresh123");
 	  driver.findElement(By.xpath("//button[contains(.,'LOG IN')]")).click();
 	  
 	  WebElement text = null;
 		  try 
 		  	{
-			text = driver.findElement(By.xpath("//span[text()='Hi,naresh_rp']"));
+			text = driver.findElement(By.xpath("//span[text()='Hi,naresh_rp1']"));
 		  	}
 	  	  catch(NoSuchElementException e)
 		  	{
